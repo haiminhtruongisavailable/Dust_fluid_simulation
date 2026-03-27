@@ -5,3 +5,8 @@ C++ reference: https://en.cppreference.com/w/cpp/numeric/math/cos.html
 github source for full process: https://github.com/barbagroup/CFDPython?tab=readme-ov-file
 - Each step to make higher revolution through equation : first order --> second order 
 Paraview: https://docs.paraview.org/en/latest/Tutorials/ClassroomTutorials/beginningParaView.html
+
+
+
+paper: https://matthias-research.github.io/pages/publications/sca03.pdf
+SPHM: https://arxiv.org/pdf/2209.05189
