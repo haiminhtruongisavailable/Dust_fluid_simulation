@@ -1,0 +1,4 @@
+# Ignore screenshot/screen capture folders everywhere
+**/Screenshots/
+**/captures/
+**/screen_captures/
