@@ -46,12 +46,12 @@ while running:
 
     # ====================== 1. CALCULATE DENSITY ======================
     density.fill(0.0)                                 # reset density every frame
-
+# get one then consider with the others.
     for i in range(N_PARTICLES):
-        for j in range(i + 1, N_PARTICLES):           # avoid double counting
-            r_vec = pos[i] - pos[j]
-            r = np.linalg.norm(r_vec)
-            if r < H and r > 1e-8:
+        for j in range(i + 1, N_PARTICLES):  #avoid duplication from the first time of the previous loop 
+            r_vec = pos[i] - pos[j]  # avoid r_vec = 0 in the first time
+            r = np.linalg.norm(r_vec) # updating distance through euclidean method
+            if r < H and r > 1e-8: #in range -> compute or not -> don't compute
                 influence = poly6(r, H) #inherit above
                 density[i] += influence * MASS # not just by range but also by mass.
                 density[j] += influence * MASS
